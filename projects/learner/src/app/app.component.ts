@@ -10,7 +10,7 @@ declare const VERSION: string;
 })
 export class AppComponent {
   title = 'learner';
-  version = 'Version: ' + VERSION;
+  version = 'Version: ';
 
   constructor(private shared: SpokeSharedService) { }
 

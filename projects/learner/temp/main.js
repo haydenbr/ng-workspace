@@ -190,7 +190,7 @@ let AppComponent = class AppComponent {
     constructor(shared) {
         this.shared = shared;
         this.title = 'learner';
-        this.version = 'Version: ' + VERSION;
+        this.version = 'Version: ';
         this.getStuff = () => this.shared.getTheStuff();
     }
 };
