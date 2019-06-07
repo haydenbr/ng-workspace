@@ -1,7 +1,10 @@
 {
-  "/": {
-    "target": "http://localhost",
+  "/Learner": {
+    "target": "http://localhost:8000",
     "secure": false,
-    "logLevel": "debug"
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/Learner": ""
+    }
   }
 }

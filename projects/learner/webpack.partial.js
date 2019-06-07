@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     new WriteFilePlugin({
       test: /\.(js|html)$/,
-      // force: true,
+      force: true,
     })
   ],
 }
