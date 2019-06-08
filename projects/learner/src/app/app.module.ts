@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SpokeSharedModule } from 'spoke-shared';
+import { RoutingModule } from './routing.module';
+import { FooComponent } from './foo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooComponent
   ],
   imports: [
     BrowserModule,
-    SpokeSharedModule
+    SpokeSharedModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
