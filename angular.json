@@ -124,7 +124,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/admin",
             "index": "projects/admin/src/index.html",
@@ -168,9 +168,10 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "admin:build"
+            "browserTarget": "admin:build",
+            "proxyConfig": "proxy.config.json"
           },
           "configurations": {
             "production": {

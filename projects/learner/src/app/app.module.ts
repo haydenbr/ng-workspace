@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { SpokeSharedModule } from 'spoke-shared';
 import { RoutingModule } from './routing.module';
 import { FooComponent } from './foo.component';
 
@@ -13,7 +12,6 @@ import { FooComponent } from './foo.component';
   ],
   imports: [
     BrowserModule,
-    SpokeSharedModule,
     RoutingModule
   ],
   providers: [],

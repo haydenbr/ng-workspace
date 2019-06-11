@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SpokeSharedService } from 'spoke-shared';
 
 declare const VERSION: string;
 
@@ -11,8 +10,4 @@ declare const VERSION: string;
 export class AppComponent {
   title = 'learner';
   version = 'Version: ';
-
-  constructor(private shared: SpokeSharedService) { }
-
-  getStuff = () => this.shared.getTheStuff();
 }

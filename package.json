@@ -9,8 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "ts-node": "ts-node --project tsconfig.json",
-    "server": "ts-node foo-server.ts",
-    "foo": "ng serve --extra-webpack-config projects/learner/webpack.partial.js --project learner"
+    "server": "ts-node server.ts",
+    "serve:learner": "ng serve --extra-webpack-config projects/learner/webpack.config.js --base-href /Spoke --project learner"
   },
   "private": true,
   "dependencies": {
