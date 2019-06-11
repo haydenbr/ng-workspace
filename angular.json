@@ -228,41 +228,6 @@
           }
         }
       }
-    },
-    "spoke-shared": {
-      "projectType": "library",
-      "root": "projects/spoke-shared",
-      "sourceRoot": "projects/spoke-shared/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/spoke-shared/tsconfig.lib.json",
-            "project": "projects/spoke-shared/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/spoke-shared/src/test.ts",
-            "tsConfig": "projects/spoke-shared/tsconfig.spec.json",
-            "karmaConfig": "projects/spoke-shared/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/spoke-shared/tsconfig.lib.json",
-              "projects/spoke-shared/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
     }
   },
   "defaultProject": "learner"
