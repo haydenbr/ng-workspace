@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "ts-node": "ts-node --project tsconfig.json",
     "server": "ts-node server.ts",
-    "serve:learner": "ng serve --extra-webpack-config projects/learner/webpack.config.js --base-href /Spoke --project learner"
+    "serve:learner": "ng serve --extra-webpack-config projects/learner/webpack.config.js --project learner",
+    "serve:admin": "ng serve --extra-webpack-config projects/admin/webpack.config.js --project admin"
   },
   "private": true,
   "dependencies": {
