@@ -6,7 +6,13 @@ const port = 8000;
 
 app.use(morgan('dev'));
 
-app.use('/', express.static('dist/learner'));
-app.use('/Admin', express.static('dist/admin'));
+app.use('/', express.static('dist/learner', {
+  etag: false,
+  maxage: 0
+}));
+app.use('/Admin', express.static('dist/admin', {
+  etag: false,
+  maxage: 0
+}));
 
 app.listen(port, () => console.log(`server running on port ${port}`));
