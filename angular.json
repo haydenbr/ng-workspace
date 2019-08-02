@@ -11,7 +11,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "ngx-build-plus:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/learner",
             "index": "projects/learner/src/index.html",
@@ -55,10 +55,9 @@
           }
         },
         "serve": {
-          "builder": "ngx-build-plus:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "learner:build",
-            "proxyConfig": "proxy.config.json"
+            "browserTarget": "learner:build"
           },
           "configurations": {
             "production": {
@@ -73,7 +72,7 @@
           }
         },
         "test": {
-          "builder": "ngx-build-plus:karma",
+          "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "projects/learner/src/test.ts",
             "polyfills": "projects/learner/src/polyfills.ts",
@@ -124,7 +123,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "ngx-build-plus:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/admin",
             "index": "projects/admin/src/index.html",
@@ -168,10 +167,9 @@
           }
         },
         "serve": {
-          "builder": "ngx-build-plus:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "admin:build",
-            "proxyConfig": "proxy.config.json"
+            "browserTarget": "admin:build"
           },
           "configurations": {
             "production": {

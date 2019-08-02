@@ -10,4 +10,6 @@ declare const VERSION: string;
 export class AppComponent {
   title = 'learner';
   version = 'Version: ';
+
+  message = 'Bob is cool! LooooooL'
 }
