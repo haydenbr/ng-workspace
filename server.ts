@@ -14,5 +14,9 @@ app.use('/Admin', express.static('dist/admin', {
   etag: false,
   maxage: 0
 }));
+app.use('/Marvel', express.static('dist/marvel', {
+  etag: false,
+  maxage: 0
+}));
 
 app.listen(port, () => console.log(`server running on port ${port}`));
