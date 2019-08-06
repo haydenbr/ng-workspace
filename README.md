@@ -10,3 +10,7 @@ Get setup by checking out the source and installing node modules. `yarn start` r
 - [angular.json documentation](https://angular.io/guide/workspace-config)
 - [tsconfig from an angular view](https://angular.io/guide/typescript-configuration)
 - [browser sync options](https://www.browsersync.io/docs/options). We're only using browsersync as an auto-reloading, local dev-server and proxy. We build all the projects and output them to local disk and watch these built files so that browsersync will reload when they've changed, while proxying us to the "api" server to actually get the files.
+
+## Thanks!
+
+Thanks to Aristeidis Bampakos ([twitter](https://twitter.com/abampakos), [github](https://github.com/bampakoa)) for this [super helpful repo](https://github.com/bampakoa/angular-athens-demo).
