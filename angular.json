@@ -276,12 +276,6 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "projects/marvel/environments/environment.ts",
-                  "with": "projects/marvel/environments/environment.prod.ts"
-                }
-              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,

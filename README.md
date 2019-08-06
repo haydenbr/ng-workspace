@@ -1,6 +1,8 @@
 # ng-workspace
 
-This is mostly for tinkering around with an angular workspace that has multiple projects. Doing this to prep for angular migration for a large, messy project 😬.
+This is mostly for tinkering around with an angular workspace that has multiple projects. Doing this to prep for angular migration 😬.
+
+Get setup by checking out the source and installing node modules. `yarn start` runs the dev server. Other available commands are listed in the `scripts` section of `package.json`. Gulp only exists for running the templatecache process for angularJS projects. Any other build/dev tasks should be added as npm scripts.
 
 ## Helpful Resources
 
