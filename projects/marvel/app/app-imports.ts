@@ -11,6 +11,7 @@ import './core/image.service.ts';
 import './core/http-interceptor.ts';
 import './widgets/widgets.module.ts';
 import './widgets/character-detail.ts';
+import './widgets/foo-bar.component.js';
 import './layout/layout.module.ts';
 import './layout/shell.ts';
 import './layout/topnav.ts';
