@@ -4,15 +4,16 @@ import './vendor';
 import './app-imports';
 
 (function () {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('ngaApp', [
-            'ngaApp.core',
-            'ngaApp.layout',
-            'ngaApp.widgets',
-            'ngaApp.characters',
-            'ngaApp.comics',
-            'ngaApp.quiz'
-        ]);
+  angular
+    .module('ngaApp', [
+      'ngaApp.core',
+      'ngaApp.layout',
+      'ngaApp.widgets',
+      'ngaApp.characters',
+      'ngaApp.comics',
+      'ngaApp.quiz',
+      'common'
+    ]);
 })();

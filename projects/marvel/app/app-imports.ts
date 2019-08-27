@@ -29,3 +29,5 @@ import './quiz/quiz.service.ts';
 import './quiz/quiz.ts';
 import './quiz/question.ts';
 import './templates.ts';
+
+import '@common/main.ts';

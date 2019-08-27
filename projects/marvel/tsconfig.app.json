@@ -3,9 +3,9 @@
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
     "types": []
-  }
-  ,
+  },
   "include": [
-    "**/*.ts"
+    "**/*.ts",
+    "../common/**/*.ts"
   ]
 }

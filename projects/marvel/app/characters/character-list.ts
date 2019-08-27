@@ -12,15 +12,17 @@ import * as angular from 'angular';
             templateUrl: 'app/characters/character-list.html'
         });
 
-    CharacterList.$inject = ['$mdSidenav', 'characterService'];
-    function CharacterList($mdSidenav, characterService) {
+    CharacterList.$inject = ['$mdSidenav', 'characterService', 'LibCommonService'];
+    function CharacterList($mdSidenav, characterService, LibCommonService) {
         var vm = this;
         vm.characters = [];
         vm.search = search;
         vm.isVisible = false;
         vm.selectCharacter = selectCharacter;
         vm.selectedCharacter = null;
-        vm.showProgress = false;
+      vm.showProgress = false;
+
+      LibCommonService.hey()
 
         function charactersGetComplete(characters) {
             vm.characters = characters;
