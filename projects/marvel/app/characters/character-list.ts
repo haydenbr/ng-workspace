@@ -1,5 +1,7 @@
 import * as angular from 'angular';
 
+import { LibCommonService } from '@common/lib-common.service';
+
 (function () {
 
     'use strict';
@@ -13,7 +15,7 @@ import * as angular from 'angular';
         });
 
     CharacterList.$inject = ['$mdSidenav', 'characterService', 'LibCommonService'];
-    function CharacterList($mdSidenav, characterService, LibCommonService) {
+    function CharacterList($mdSidenav, characterService, libCommonService: LibCommonService) {
         var vm = this;
         vm.characters = [];
         vm.search = search;
@@ -22,7 +24,9 @@ import * as angular from 'angular';
         vm.selectedCharacter = null;
       vm.showProgress = false;
 
-      LibCommonService.hey()
+      libCommonService.hey()
+
+      libCommonService.getData().then(r => console.log(r.data));
 
         function charactersGetComplete(characters) {
             vm.characters = characters;

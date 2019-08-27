@@ -1,20 +1,14 @@
 import * as ng from 'angular';
 
-(function () {
-  'use strict';
+export class LibCommonService {
+  static $inject = ['$http'];
 
-  ng.module('common.services')
-    .service('LibCommonService', LibCommonService)
+  constructor(private $http: ng.IHttpService) { }
 
-  LibCommonService.$inject = ['$http']
+  getData = () => this.$http.get('https://jsonplaceholder.typicode.com/posts/1');
 
-  function LibCommonService($http: ng.IHttpService) {
-    var service: any = {};
+  hey = () => console.log('hey from LibCommonService!!!');
+}
 
-    service.getStuff = () => $http.get('https://jsonplaceholder.typicode.com/posts/1');
-
-    service.hey = () => console.log('hey from LibCommonService!!!');
-
-    return service;
-  }
-}());
+ng.module('common.services')
+  .service('LibCommonService', LibCommonService)
