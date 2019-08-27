@@ -1,22 +1,25 @@
-import * as angular from 'angular';
+import * as ng from 'angular';
 
-(function () {
-  'use strict';
+class LibCommonComponent implements ng.IComponentController {
+	static $inject = ['$log'];
 
-  angular
-    .module ('common.components')
-    .component('libCommon', {
-      bindings: {},
-      controller: LibCommonComponent,
-			controllerAs: 'vm',
-			template: `
-				<pre>lib-common</pre>
-			`
-    });
+	message = 'message from lib-common';
 
-  LibCommonComponent.$inject = []
+	constructor(private $log: ng.ILogService) { }
 
-  function LibCommonComponent() {
+	$onInit() {
+		this.$log.info('init from lib-common component');
+	}
+}
 
-  }
-}());
+ng
+	.module ('common.components')
+	.component('libCommon', {
+		bindings: {},
+		controller: LibCommonComponent,
+		controllerAs: 'vm',
+		template: `
+			<pre>lib-common</pre>
+			<b>{{vm.message}}</b>
+		`
+	});
