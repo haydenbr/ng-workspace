@@ -1,1 +1,1 @@
-angular.module('common').run(['$templateCache', function($templateCache) {$templateCache.put('common/lib-common.component.html','<pre>lib-common</pre><b>{{vm.message}}</b>');}]);
+// auto-generated file
