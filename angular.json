@@ -261,16 +261,16 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/marvel",
-            "index": "projects/marvel/index.html",
-            "main": "projects/marvel/app/app.ts",
-            "polyfills": "projects/marvel/polyfills.ts",
+            "index": "projects/marvel/src/index.html",
+            "main": "projects/marvel/src/main.ts",
+            "polyfills": "projects/marvel/src/polyfills.ts",
             "tsConfig": "projects/marvel/tsconfig.app.json",
             "assets": [
-              "projects/marvel/assets",
-              "projects/marvel/favicon.ico"
+              "projects/marvel/src/assets",
+              "projects/marvel/src/favicon.ico"
             ],
             "styles": [
-              "projects/marvel/styles.scss"
+              "projects/marvel/src/styles.scss"
             ],
             "scripts": []
           },
