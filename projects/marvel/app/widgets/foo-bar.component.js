@@ -16,7 +16,7 @@
   function fooBarController() {
     var vm = this;
 
-    vm.message = 'Dingus!'
+    vm.message = 'Interpolated!'
 
     vm.onInit$ = function () {
       console.log('hey this is init!!!');

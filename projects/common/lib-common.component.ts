@@ -1,5 +1,4 @@
 import * as angular from 'angular';
-import { IHttpService } from 'angular';
 
 (function () {
   'use strict';
@@ -9,12 +8,15 @@ import { IHttpService } from 'angular';
     .component('libCommon', {
       bindings: {},
       controller: LibCommonComponent,
-      controllerAs: 'vm',
+			controllerAs: 'vm',
+			template: `
+				<pre>lib-common</pre>
+			`
     });
 
-  LibCommonComponent.$inject = ['$http']
+  LibCommonComponent.$inject = []
 
-  function LibCommonComponent($http: IHttpService) {
+  function LibCommonComponent() {
 
   }
 }());
