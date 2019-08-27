@@ -18,8 +18,9 @@ ng
 		bindings: {},
 		controller: LibCommonComponent,
 		controllerAs: 'vm',
-		template: `
-			<pre>lib-common</pre>
-			<b>{{vm.message}}</b>
-		`
+		// template: `
+		// 	<pre>lib-common</pre>
+		// 	<b>{{vm.message}}</b>
+		// `
+		templateUrl: 'common/lib-common.component.html'
 	});
