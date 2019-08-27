@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var plug = require('gulp-load-plugins')();
 
-const srcGlob = ['./projects/marvel/app/**/*.html'];
+const srcGlob = ['./app/**/*.html'];
 
 const generateTemplateCache = () => gulp
   .src(srcGlob)
@@ -11,7 +11,7 @@ const generateTemplateCache = () => gulp
     standalone: false,
     root: 'app/'
   }))
-  .pipe(gulp.dest('./projects/marvel/app/'));
+  .pipe(gulp.dest('./app/'));
 
 gulp.task('templatecache:watch', () => plug
   .watch(
