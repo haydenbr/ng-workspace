@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "yarn serve & yarn watch",
-    "build": "learner:build --prod & admin:build --prod & marvel:build --prod",
+    "build": "yarn learner:build --prod & yarn admin:build --prod & yarn marvel:build --prod",
     "server": "ts-node --project tsconfig.json server.ts",
     "learner:build": "ng build --project learner",
     "learner:watch": "yarn learner:build --watch",
